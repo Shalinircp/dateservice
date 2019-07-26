@@ -1,6 +1,7 @@
 plugins {
 	id 'org.springframework.boot' version '2.1.6.RELEASE'
 	id 'java'
+  id 'eclipse'
 }
 
 apply plugin: 'io.spring.dependency-management'
@@ -14,6 +15,6 @@ repositories {
 }
 
 dependencies {
-	implementation 'org.springframework.boot:spring-boot-starter'
+	implementation 'org.springframework.boot:spring-boot-starter-hateoas'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
